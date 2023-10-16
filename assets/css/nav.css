@@ -1,0 +1,125 @@
+.container1 {
+    display: flex;
+    align-items: center;
+    
+}
+.shopping{
+    position: relative;
+    text-align: right;
+    cursor: pointer;
+    
+}
+.shopping img{
+    width: 40px;
+}
+.shopping span{
+    background: #970912;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    padding: 3px 10px;
+}
+.navlist{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    margin-top: 50px;
+}
+.navlist .item{
+    text-align: center;
+    background-color: #DCE0E1;
+    padding: 20px;
+    box-shadow: 0 50px 50px #757676;
+    letter-spacing: 1px;
+}
+.navlist .item img{
+    width: 90%;
+    height: 430px;
+    object-fit: cover;
+}
+.navlist .item .title{
+    font-weight: 600;
+}
+.navlist .item .price{
+    margin: 10px;
+}
+.navlist .item button{
+    background-color: #1C1F25;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+}
+.navcard{
+    position: fixed;
+    top:0;
+    left: 100%;
+    width: 500px;
+    background-color: #453e3bf8;
+    height: 100vh;
+    transition: 0.5s;
+    z-index: 990;
+}
+.active1 .navcard{
+    left: calc(100% - 500px);
+}
+.active1 .container1{
+   transform: translateX(-200px);
+}
+.navcard h1{
+    color: white;
+    font-weight: 100;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+.navcard .checkOut{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+}
+.navcard .checkOut div{
+    background-color: #970912;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+.navcard .checkOut div:nth-child(2){
+    background-color: #1C1F25;
+    color: #fff;
+}
+.navlistCard li{
+    display: grid;
+    grid-template-columns: 100px repeat(3, 1fr);
+    color: #fff;
+    row-gap: 10px;
+}
+.navlistCard li div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navlistCard li img{
+    width: 90%;
+}
+.navlistCard li button{
+    background-color: #fff5;
+    border: none;
+}
+.navlistCard .count{
+    margin: 0 10px;
+}

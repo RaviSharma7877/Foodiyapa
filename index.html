@@ -12,9 +12,15 @@
   -->
   <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
 
+  <!--
+     boxicon 
+  -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
   <!-- 
     - custom css link
   -->
+  <link rel="stylesheet" href="/assets/css/nav.css">
   <link rel="stylesheet" href="./assets/css/style.css">
 
   <!-- 
@@ -80,6 +86,29 @@
         </button>
 
         <button class="btn btn-hover">Reservation</button>
+        <a href="signup.html"><i class='bx bx-user-circle' style="font-size: 25px; font-weight: bold;"></i></a>
+
+        <div class="container1">
+          <div class="header1">
+              <div class="shopping">
+                  <img src="/assets/images/shopping.svg">
+                  <span class="quantity">0</span>
+              </div>
+            </div>
+  
+          <div class="navlist">
+            
+          </div>
+      </div>
+      <div class="navcard">
+          <h1>Card</h1>
+          <ul class="navlistCard">
+          </ul>
+          <div class="checkOut">
+              <div class="total">0</div>
+              <div class="closeShopping">Close</div>
+          </div>
+      </div>
 
         <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
           <span class="line top"></span>
@@ -136,7 +165,7 @@
 
             <p class="hero-text">Food is any substance consumed to provide nutritional support for an organism.</p>
 
-            <button class="btn"><a href="booking-form.html">Book A Table</a></button>
+            <button class="btn"><a href="#footer">Book A Table</a></button>
 
           </div>
 
@@ -435,239 +464,6 @@
 
           <ul class="food-menu-list">
 
-            <li>
-              <div class="food-menu-card">
-
-                <div class="card-banner">
-                  <img src="./assets/images/food-menu-1.png" width="300" height="300" loading="lazy"
-                    alt="Fried Chicken Unlimited" class="w-100">
-
-                  <div class="badge">-15%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Chicken</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </div>
-
-                <h3 class="h3 card-title">Fried Chicken Unlimited</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price">$49.00</data>
-
-                  <del class="del" value="69.00">$69.00</del>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="food-menu-card">
-
-                <div class="card-banner">
-                  <img src="./assets/images/food-menu-2.png" width="300" height="300" loading="lazy"
-                    alt="Burger King Whopper" class="w-100">
-
-                  <div class="badge">-10%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Noddles</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </div>
-
-                <h3 class="h3 card-title">Burger King Whopper</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price" value="29.00">$29.00</data>
-
-                  <del class="del">$39.00</del>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="food-menu-card">
-
-                <div class="card-banner">
-                  <img src="./assets/images/food-menu-3.png" width="300" height="300" loading="lazy"
-                    alt="White Castle Pizzas" class="w-100">
-
-                  <div class="badge">-25%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Pizzas</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </div>
-
-                <h3 class="h3 card-title">White Castle Pizzas</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price" value="49.00">$49.00</data>
-
-                  <del class="del">$69.00</del>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="food-menu-card">
-
-                <div class="card-banner">
-                  <img src="./assets/images/food-menu-4.png" width="300" height="300" loading="lazy"
-                    alt="Bell Burrito Supreme" class="w-100">
-
-                  <div class="badge">-20%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Burrito</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </div>
-
-                <h3 class="h3 card-title">Bell Burrito Supreme</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price" value="59.00 ">$59.00</data>
-
-                  <del class="del">$69.00</del>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="food-menu-card">
-
-                <div class="card-banner">
-                  <img src="./assets/images/food-menu-5.png" width="300" height="300" loading="lazy"
-                    alt="Kung Pao Chicken BBQ" class="w-100">
-
-                  <div class="badge">-5%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Nuggets</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </div>
-
-                <h3 class="h3 card-title">Kung Pao Chicken BBQ</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price" value="49.00">$49.00</data>
-
-                  <del class="del">$69.00</del>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="food-menu-card">
-
-                <div class="card-banner">
-                  <img src="./assets/images/food-menu-6.png" width="300" height="300" loading="lazy"
-                    alt="Wendy's Chicken" class="w-100">
-
-                  <div class="badge">-15%</div>
-
-                  <button class="btn food-menu-btn">Order Now</button>
-                </div>
-
-                <div class="wrapper">
-                  <p class="category">Chicken</p>
-
-                  <div class="rating-wrapper">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-                </div>
-
-                <h3 class="h3 card-title">Wendy's Chicken</h3>
-
-                <div class="price-wrapper">
-
-                  <p class="price-text">Price:</p>
-
-                  <data class="price" value="49.00">$49.00</data>
-
-                  <del class="del">$69.00</del>
-
-                </div>
-
-              </div>
-            </li>
 
           </ul>
 
@@ -1151,7 +947,7 @@
     - #FOOTER
   -->
 
-  <footer class="footer">
+  <footer class="footer" id="footer">
 
     <div class="footer-top" style="background-image: url('./assets/images/footer-illustration.png')">
       <div class="container">
@@ -1241,16 +1037,16 @@
           <div class="input-wrapper">
 
             <input type="text" name="full_name" required placeholder="Your Name" aria-label="Your Name"
-              class="input-field">
+              class="input-field tablename">
 
             <input type="email" name="email_address" required placeholder="Email" aria-label="Email"
-              class="input-field">
+              class="input-field tableemail">
 
           </div>
 
           <div class="input-wrapper">
 
-            <select name="total_person" aria-label="Total person" class="input-field">
+            <select name="total_person" aria-label="Total person" class="input-field tableinputfiled">
               <option value="person">Person</option>
               <option value="2 person">2 Person</option>
               <option value="3 person">3 Person</option>
@@ -1259,13 +1055,13 @@
               <option value="5 person">6 Person</option>
             </select>
 
-            <input type="date" name="booking_date" aria-label="Reservation date" class="input-field">
-            <input type="time" name="booking_time" aria-label="Reservation time" class="input-field">
+            <input type="date" name="booking_date" aria-label="Reservation date" class="input-field tabledate">
+            <input type="time" name="booking_time" aria-label="Reservation time" class="input-field tabletime">
           </div>
 
-          <textarea name="message" required placeholder="Message(Optional)" aria-label="Message" class="input-field"></textarea>
+          <textarea name="message" required placeholder="Message(Optional)" aria-label="Message" class="input-field tablemessage"></textarea>
 
-          <button type="submit" class="btn">Book a Table</button>
+          <button type="submit" class="btn tablebtn">Book a Table</button>
 
         </form>
 
